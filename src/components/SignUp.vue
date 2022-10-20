@@ -2,16 +2,39 @@
     <img class="logo" src="../assets/yinjang.png"/>
     <h1>Sign Up</h1>
     <div class="register">
-        <input type="text" placeholder="Name"/>
-        <input type="text" placeholder="Email"/>
-        <input type="password" placeholder="Password"/>
-        <button>Sign Up</button>
+        <input type="text" v-model="name" placeholder="Name"/>
+        <input type="text" v-model="email" placeholder="Email"/>
+        <input type="password" v-model="password" placeholder="Password"/>
+        <button v-on:click="signUp">Sign Up</button>
     </div>
 </template>
 
 <script>
+import axios from 'axios'
     export default {
-        name:'SignUp'
+        name:'SignUp',
+        data(){
+            return {
+                name:'',
+                email:'',
+                password:''
+            }
+        },
+        methods:{
+            async signUp(){
+                let result = await axios.post("http://localhost:3000/users",{
+                    email:this.email,
+                    password:this.password,
+                    name:this.name
+                })
+
+                console.log(result)
+                if(result.status==201){
+                    alert("Sign Up Successful!")
+                    localStorage.setItem("user-info", JSON.stringify(result.data))
+                }
+            }
+        }
     }
 </script>
 
