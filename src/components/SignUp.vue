@@ -30,8 +30,8 @@ import axios from 'axios'
 
                 console.log(result)
                 if(result.status==201){
-                    alert("Sign Up Successful!")
                     localStorage.setItem("user-info", JSON.stringify(result.data))
+                    this.$router.push({name:'HomePage'})
                 }
             }
         }
