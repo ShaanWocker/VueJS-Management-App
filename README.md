@@ -1,5 +1,8 @@
 # resturant-app
 
+## Sign Up Page
+![alt text](https://github.com/ShaanWocker/VueJS-Management-App/blob/main/src/assets/Readme1.png?raw=true)
+
 ## Project setup
 ```
 npm install
