@@ -1,7 +1,19 @@
 # resturant-app
 
-## Sign Up Page
+## Home Page
+![alt text](https://github.com/ShaanWocker/VueJS-Management-App/blob/main/src/assets/HomePage.png?raw=true)
+
+## Sign Up
 ![alt text](https://github.com/ShaanWocker/VueJS-Management-App/blob/main/src/assets/Readme1.png?raw=true)
+
+## Login
+![alt text](https://github.com/ShaanWocker/VueJS-Management-App/blob/main/src/assets/Login.png?raw=true)
+
+## Add
+![alt text](https://github.com/ShaanWocker/VueJS-Management-App/blob/main/src/assets/Add.png?raw=true)
+
+## Update
+![alt text](https://github.com/ShaanWocker/VueJS-Management-App/blob/main/src/assets/Update.png?raw=true)
 
 ## Project setup
 ```

@@ -23,6 +23,7 @@ body {
 }
 .logo{
   width: 100px;
+  
 }
 .register input, .login input, .add input {
     width: 300px;
@@ -42,5 +43,4 @@ body {
     color: #ffffff;
     cursor: pointer;
 }
-
 </style>
