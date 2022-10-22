@@ -37,3 +37,24 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+
+### For the API install json-web-server in a seperate directory
+```
+create your db.json file and include this in it -> 
+
+    {
+        "users": [
+            
+        ],
+        "resturants": [
+            
+        ]
+    }   
+
+```
+
+### To run json-web-server 
+```
+In you API directory run 'json-server --watch db.json'
+```
